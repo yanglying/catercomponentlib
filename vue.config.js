@@ -1,7 +1,7 @@
-const { defineConfig } = require("@vue/cli-service");
+// const { defineConfig } = require("@vue/cli-service");
 const path = require("path");
-module.exports = defineConfig({
-  transpileDependencies: true,
+module.exports = {
+  transpileDependencies: ["lodash"],
   // 修改 pages 入口
   pages: {
     index: {
@@ -15,4 +15,4 @@ module.exports = defineConfig({
     // 新增一个 ~ 指向 packages 目录, 方便示例代码中使用
     config.resolve.alias.set("~", path.resolve("packages"));
   },
-});
+}

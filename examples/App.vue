@@ -1,7 +1,17 @@
 <template>
-  <div>组件示例</div>
-  <div>{{ count }}</div>
-  <nd-button @click="handleClick" type="primary">按钮222</nd-button>
+  
+  <ct-modelBox
+    show="false"
+    width="300"
+    borderRadius="10"
+    headerColor="#009966"
+    headerText="title"
+    contentTextColor="#000"
+    confirmText="确认666"
+    cancelText="取消222"
+    @confirm="fn1"
+    @close="fn2"
+  >l am content!!</ct-modelBox>
 </template>
 
 <script lang="ts">
@@ -19,17 +29,14 @@ export default defineComponent({
     handleClick() {
       this.count++;
     },
+    fn1(e:number) {console.log(e+'xxx');
+    },
+    fn2(e:number) {console.log(2+'sdadas');
+    },
   },
 });
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
