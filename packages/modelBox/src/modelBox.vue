@@ -1,6 +1,7 @@
 <template>
- 
-   <div class="mask" v-if="state.isVisable">
+    {{ props.show }}
+   <div class="mask" v-if="show">
+  
      <div  class="defaultStyle" :style="{
     borderRadius:borderRadius+'px',
     width:width+'px',
@@ -41,7 +42,7 @@ export interface IModelBox{
 import { defineProps, withDefaults,defineEmits ,reactive} from "vue";
 
 const props = withDefaults(defineProps<IModelBox>(), {
-   show:false,
+  
    width:"350",
    borderRadius:"10",
    headerColor:"#007bff",
@@ -53,6 +54,7 @@ const props = withDefaults(defineProps<IModelBox>(), {
 const state=reactive({
     isVisable:props.show
 })
+console.log(props.show);
 
 
 const emits = defineEmits(['confirm', 'close'])

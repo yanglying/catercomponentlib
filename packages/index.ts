@@ -2,8 +2,9 @@
 import { App } from "vue";
 import NdButton from "./catButton/src/button.vue";
 import ModelBox from "./modelBox/src/modelBox.vue";
+import Message from './Message/src/Message.vue'
 // 所有组件列表
-const components = [NdButton,ModelBox];
+const components = [NdButton,ModelBox,Message];
 
 // 定义 install 方法， App 作为参数
 const install = (app: App): void => {
@@ -11,7 +12,7 @@ const install = (app: App): void => {
   components.map((component) => app.component(component.name, component));
 };
 
-export { NdButton,ModelBox };
+export { NdButton,ModelBox ,Message};
 
 export default {
   install,
