@@ -74,7 +74,7 @@ const confirm=()=>{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgb(237, 237, 237);
+    background-color: rgba(237, 237, 237,0.5);
     top:0;
     left:0;
     .defaultStyle{

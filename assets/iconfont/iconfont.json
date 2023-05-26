@@ -1,0 +1,23 @@
+{
+  "id": "4087938",
+  "name": "组件库",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7382777",
+      "name": "icon_search",
+      "font_class": "icon_search",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "33576731",
+      "name": "Icon_arrow-down",
+      "font_class": "Icon_arrow-down",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

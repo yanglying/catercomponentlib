@@ -28,6 +28,6 @@
     "typings/**/*.ts",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
+, "packages/Message/src/index.js"  ],
   "exclude": ["node_modules"]
 }
